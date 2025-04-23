@@ -72,7 +72,7 @@ Contribuições para correção de dados, adição de novos fantasmas ou melhori
 
 ## 📄 Licença
 
-Este repositório segue a licença GNU GPL v3.0 — veja o arquivo [LICENSE](../LICENSE) para mais detalhes.
+Este repositório segue a licença GNU GPL v3.0 — veja o arquivo [LICENSE](./LICENSE) para mais detalhes.
 
 ## 📱 Contato
 
