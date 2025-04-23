@@ -451,7 +451,7 @@
     "id": "hantu",
     "name": "Hantu",
     "description": "Um fantasma que prospera no frio. Hantus se movem mais rápido em áreas frias. Desligar o disjuntor pode ser perigoso.",
-    "evidences": ["Ultraviolet", "GhostOrb", "FreezingTemps"],
+    "evidences": ["Fingerprints", "GhostOrb", "FreezingTemps"],
     "guaranteedEvidences": ["FreezingTemps"],
     "strengths": "Mais rápido em temperaturas frias.",
     "weaknesses": "Mais lento em temperaturas quentes. Não acelera com linha de visão.",
