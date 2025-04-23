@@ -1,0 +1,719 @@
+[
+  {
+    "id": "spirit",
+    "name": "Espírito",
+    "description": "O Espírito é o fantasma mais comum, geralmente pacífico, mas perigoso quando irritado. Incensos são muito eficazes contra ele.",
+    "evidences": ["EMF", "SpiritBox", "GhostWriting"],
+    "guaranteedEvidences": [],
+    "strengths": "Nenhuma força específica.",
+    "weaknesses": "Incensos impedem caça por 180s (normal: 90s).",
+    "behaviors": [
+      {
+        "description": "Sem comportamentos especiais em investigações."
+      },
+      {
+        "description": "Incensos estendem cooldown de caça para 180s."
+      }
+    ],
+    "huntThreshold": 50,
+    "speed": "normal",
+    "hasLOS": true,
+    "speedDetails": {
+      "baseSpeed": 1.7,
+      "description": "Velocidade normal (1.7 m/s)",
+      "variableSpeed": false
+    }
+  },
+  {
+    "id": "wraith",
+    "name": "Espectro",
+    "description": "Aparições são fantasmas perigosos conhecidos por teletransporte. Não interagem com sal e são rápidos.",
+    "evidences": ["EMF", "SpiritBox", "DotsProjector"],
+    "guaranteedEvidences": [],
+    "strengths": "Não toca sal.",
+    "weaknesses": "Reação tóxica ao sal.",
+    "behaviors": [
+      {
+        "description": "Não interage com sal."
+      },
+      {
+        "description": "Teletransporta para jogadores (EMF 2 ou 5)."
+      }
+    ],
+    "huntThreshold": 50,
+    "speed": "normal",
+    "hasLOS": true,
+    "speedDetails": {
+      "baseSpeed": 1.7,
+      "description": "Velocidade normal (1.7 m/s)",
+      "variableSpeed": false
+    }
+  },
+  {
+    "id": "phantom",
+    "name": "Aparição",
+    "description": "Aparições são fantasmas traiçoeiros que drenam sanidade e podem ser vistos em fotos. Desaparecem com fotos.",
+    "evidences": ["SpiritBox", "Fingerprints", "DotsProjector"],
+    "guaranteedEvidences": [],
+    "strengths": "Drena sanidade mais rápido.",
+    "weaknesses": "Fotos o fazem desaparecer.",
+    "behaviors": [
+      {
+        "description": "Não aparece em fotos."
+      },
+      {
+        "description": "Fotos o fazem desaparecer."
+      },
+      {
+        "description": "Quase invisível em caçadas."
+      },
+      {
+        "description": "Vaga para jogadores (EMF 2)."
+      }
+    ],
+    "huntThreshold": 50,
+    "speed": "normal",
+    "hasLOS": true,
+    "speedDetails": {
+      "baseSpeed": 1.7,
+      "description": "Velocidade normal (1.7 m/s)",
+      "variableSpeed": false
+    }
+  },
+  {
+    "id": "poltergeist",
+    "name": "Poltergeist",
+    "description": "Poltergeists manipulam objetos, arremessando-os com força e em grande número.",
+    "evidences": ["SpiritBox", "Fingerprints", "GhostWriting"],
+    "guaranteedEvidences": [],
+    "strengths": "Arremessa múltiplos objetos de uma vez.",
+    "weaknesses": "Nenhuma fraqueza específica.",
+    "behaviors": [
+      {
+        "description": "Arremessa objetos com mais frequência e força."
+      },
+      {
+        "description": "Explosões Poltergeist: múltiplos objetos arremessados."
+      }
+    ],
+    "huntThreshold": 50,
+    "speed": "normal",
+    "hasLOS": true,
+    "speedDetails": {
+      "baseSpeed": 1.7,
+      "description": "Velocidade normal (1.7 m/s)",
+      "variableSpeed": false
+    }
+  },
+  {
+    "id": "banshee",
+    "name": "Banshee",
+    "description": "Banshees caçam um jogador por vez e emitem um grito único. Temem crucifixos.",
+    "evidences": ["Fingerprints", "GhostOrb", "DotsProjector"],
+    "guaranteedEvidences": [],
+    "strengths": "Foca em um jogador por caçada.",
+    "weaknesses": "Temem crucifixos.",
+    "behaviors": [
+      {
+        "description": "Grito único no Microfone Parabólico (33%)."
+      },
+      {
+        "description": "Caça baseado na sanidade do alvo."
+      },
+      {
+        "description": "Persegue apenas o alvo na caçada (se dentro)."
+      },
+      {
+        "description": "Prefere eventos de canto."
+      },
+      {
+        "description": "Vaga para o alvo em DOTs."
+      },
+      {
+        "description": "Não muda cômodo favorito."
+      },
+      {
+        "description": "Persegue/vaga para o alvo sem EMF (66%)."
+      }
+    ],
+    "huntThreshold": 50,
+    "speed": "normal",
+    "hasLOS": true,
+    "speedDetails": {
+      "baseSpeed": 1.7,
+      "description": "Velocidade normal (1.7 m/s)",
+      "variableSpeed": false
+    },
+    "media": [
+      {
+        "type": "audio",
+        "url": "https://audio.jukehost.co.uk/xgX9vy0g81Bsgy9WcUhUIEwghlIZCBuU",
+        "description": "Grito do Banshee"
+      }
+    ]
+  },
+  {
+    "id": "jinn",
+    "name": "Jinn",
+    "description": "Jinns são territoriais e rápidos com eletricidade ligada. Ficam agressivos se a energia é desligada.",
+    "evidences": ["EMF", "Fingerprints", "FreezingTemps"],
+    "guaranteedEvidences": [],
+    "strengths": "Mais rápido se a vítima está longe (com energia ligada).",
+    "weaknesses": "Sem velocidade extra com energia desligada.",
+    "behaviors": [
+      {
+        "description": "Acelera em caçadas se jogador longe e com energia ligada."
+      },
+      {
+        "description": "Não desliga o disjuntor."
+      },
+      {
+        "description": "Drena sanidade perto do disjuntor (com energia ligada)."
+      }
+    ],
+    "huntThreshold": 50,
+    "speed": "fast",
+    "hasLOS": true,
+    "speedDetails": {
+      "baseSpeed": 1.7,
+      "losMultiplier": 1.47,
+      "description": "Velocidade normal (1.7 m/s), rápida com LOS e energia ligada (2.5 m/s)",
+      "variableSpeed": true
+    }
+  },
+  {
+    "id": "mare",
+    "name": "Mare",
+    "description": "Mares são mais perigosos no escuro. Caçam mais no escuro e podem desligar luzes.",
+    "evidences": ["SpiritBox", "GhostOrb", "GhostWriting"],
+    "guaranteedEvidences": [],
+    "strengths": "Maior chance de caçar no escuro.",
+    "weaknesses": "Luzes acesas reduzem chance de caçar.",
+    "behaviors": [
+      {
+        "description": "Caça a 60% sanidade com luz apagada, 40% com luz acesa."
+      },
+      {
+        "description": "Vaga para cômodos escuros."
+      },
+      {
+        "description": "Prefere desligar luzes."
+      },
+      {
+        "description": "Não liga luzes."
+      },
+      {
+        "description": "Desliga luzes acesas por jogadores."
+      }
+    ],
+    "huntThreshold": 60,
+    "speed": "normal",
+    "hasLOS": true,
+    "speedDetails": {
+      "baseSpeed": 1.7,
+      "description": "Velocidade normal (1.7 m/s)",
+      "variableSpeed": false
+    }
+  },
+  {
+    "id": "revenant",
+    "name": "Revenant",
+    "description": "Revenants são violentos e rápidos quando veem vítimas, mas lentos ao se esconder.",
+    "evidences": ["GhostOrb", "GhostWriting", "FreezingTemps"],
+    "guaranteedEvidences": [],
+    "strengths": "Muito mais rápido ao caçar uma vítima.",
+    "weaknesses": "Muito lento ao se esconder.",
+    "behaviors": [
+      {
+        "description": "Lento (1.0m/s) até detectar jogador, rápido (3.0m/s) ao ver."
+      }
+    ],
+    "huntThreshold": 50,
+    "speed": "variableSpeed",
+    "hasLOS": false,
+    "speedDetails": {
+      "baseSpeed": 1,
+      "losMultiplier": 3,
+      "description": "Muito lento fora de LOS (1.0 m/s), muito rápido com LOS (3.0 m/s)",
+      "variableSpeed": true
+    }
+  },
+  {
+    "id": "shade",
+    "name": "Sombra",
+    "description": "Shades são fantasmas tímidos. Atividade fantasmagórica para perto de jogadores.",
+    "evidences": ["EMF", "GhostWriting", "FreezingTemps"],
+    "guaranteedEvidences": [],
+    "strengths": "Difícil de interagir com pessoas por perto.",
+    "weaknesses": "Não caça se várias pessoas próximas.",
+    "behaviors": [
+      {
+        "description": "Modelo sombra em eventos (círculo, música, pata)."
+      },
+      {
+        "description": "Prefere modelo sombra em eventos."
+      },
+      {
+        "description": "Não caça no mesmo cômodo que jogador."
+      },
+      {
+        "description": "Não faz eventos no mesmo cômodo."
+      },
+      {
+        "description": "Sem EMF 2/3 interações no mesmo cômodo."
+      },
+      {
+        "description": "Mais eventos com sanidade baixa."
+      },
+      {
+        "description": "Não apaga firelights caçando no mesmo cômodo."
+      }
+    ],
+    "huntThreshold": 35,
+    "speed": "normal",
+    "hasLOS": true,
+    "speedDetails": {
+      "baseSpeed": 1.7,
+      "description": "Velocidade normal (1.7 m/s)",
+      "variableSpeed": false
+    }
+  },
+  {
+    "id": "demon",
+    "name": "Demônio",
+    "description": "Demônios caçam mais frequentemente e sem razão. Crucifixos mais eficazes contra eles.",
+    "evidences": ["Fingerprints", "GhostWriting", "FreezingTemps"],
+    "guaranteedEvidences": [],
+    "strengths": "Caça mais frequentemente.",
+    "weaknesses": "Crucifixos mais eficazes.",
+    "behaviors": [
+      {
+        "description": "Caça 60s após incenso (normal: 90s)."
+      },
+      {
+        "description": "Caça 20s após fim de caça/crucifixo (normal: 25s)."
+      },
+      {
+        "description": "Alcance do crucifixo +50%."
+      },
+      {
+        "description": "Pode caçar em qualquer sanidade."
+      }
+    ],
+    "huntThreshold": 70,
+    "speed": "normal",
+    "hasLOS": true,
+    "speedDetails": {
+      "baseSpeed": 1.7,
+      "description": "Velocidade normal (1.7 m/s)",
+      "variableSpeed": false
+    }
+  },
+  {
+    "id": "yurei",
+    "name": "Yurei",
+    "description": "Yureis afetam muito a sanidade e interagem com portas de saída. Incenso os prende no cômodo.",
+    "evidences": ["GhostOrb", "FreezingTemps", "DotsProjector"],
+    "guaranteedEvidences": [],
+    "strengths": "Drena sanidade mais rápido.",
+    "weaknesses": "Incenso impede de vagar por um tempo.",
+    "behaviors": [
+      {
+        "description": "Fecha/interage com porta de saida (fora caça/evento)."
+      },
+      {
+        "description": "Incenso prende no cômodo (90s)."
+      },
+      {
+        "description": "Fecha porta e drena 15% sanidade próxima."
+      }
+    ],
+    "huntThreshold": 50,
+    "speed": "normal",
+    "hasLOS": true,
+    "speedDetails": {
+      "baseSpeed": 1.7,
+      "description": "Velocidade normal (1.7 m/s)",
+      "variableSpeed": false
+    }
+  },
+  {
+    "id": "oni",
+    "name": "Oni",
+    "description": "Onis são agressivos, ativos perto de jogadores e drenam sanidade rápido. Mais visíveis na caça.",
+    "evidences": ["EMF", "FreezingTemps", "DotsProjector"],
+    "guaranteedEvidences": [],
+    "strengths": "Mais ativo perto de jogadores.",
+    "weaknesses": "Fácil de identificar por atividade.",
+    "behaviors": [
+      {
+        "description": "Drena 20% sanidade em eventos (normal: 10%)."
+      },
+      {
+        "description": "Não faz evento \"Névoa Fantasmagórica\"."
+      },
+      {
+        "description": "Pisca mais rápido na caça."
+      },
+      {
+        "description": "Mais ativo perto de muitas pessoas."
+      },
+      {
+        "description": "Mais propenso a modelo fantasma completo em eventos."
+      }
+    ],
+    "huntThreshold": 50,
+    "speed": "normal",
+    "hasLOS": true,
+    "speedDetails": {
+      "baseSpeed": 1.7,
+      "description": "Velocidade normal (1.7 m/s)",
+      "variableSpeed": false
+    }
+  },
+  {
+    "id": "yokai",
+    "name": "Yokai",
+    "description": "Yokais são atraídos por vozes e ficam agitados ao ouvir jogadores. Silenciosos em caçadas.",
+    "evidences": ["SpiritBox", "GhostOrb", "DotsProjector"],
+    "guaranteedEvidences": [],
+    "strengths": "Agitado por vozes.",
+    "weaknesses": "Só ouve vozes próximas na caçada.",
+    "behaviors": [
+      {
+        "description": "Audição limitada a 2.5m na caçada."
+      },
+      {
+        "description": "Mais ativo ao falar perto."
+      },
+      {
+        "description": "Caça a 80% sanidade ao ouvir jogadores."
+      }
+    ],
+    "huntThreshold": 50,
+    "speed": "normal",
+    "hasLOS": true,
+    "speedDetails": {
+      "baseSpeed": 1.7,
+      "description": "Velocidade normal (1.7 m/s)",
+      "variableSpeed": false
+    }
+  },
+  {
+    "id": "hantu",
+    "name": "Hantu",
+    "description": "Hantus são mais rápidos em cômodos frios e visíveis com respiração congelada sem energia ligada.",
+    "evidences": ["Fingerprints", "GhostOrb", "FreezingTemps"],
+    "guaranteedEvidences": ["FreezingTemps"],
+    "strengths": "Mais rápido em temperaturas frias.",
+    "weaknesses": "Mais lento em temperaturas quentes.",
+    "behaviors": [
+      {
+        "description": "Respiração congelante visível sem energia."
+      },
+      {
+        "description": "Não liga o disjuntor."
+      },
+      {
+        "description": "Mais propenso a desligar disjuntor."
+      },
+      {
+        "description": "Mais rápido em cômodos frios na caçada."
+      }
+    ],
+    "huntThreshold": 50,
+    "speed": "variableSpeed",
+    "hasLOS": false,
+    "speedDetails": {
+      "baseSpeed": 1.4,
+      "description": "Varia de 1.4 m/s em temperaturas quentes até 2.7 m/s em temperaturas frias.",
+      "variableSpeed": true
+    }
+  },
+  {
+    "id": "goryo",
+    "name": "Goryo",
+    "description": "Goryos são tímidos e raramente se afastam do local de morte. DOTs visíveis só em câmeras.",
+    "evidences": ["EMF", "Fingerprints", "DotsProjector"],
+    "guaranteedEvidences": ["DotsProjector"],
+    "strengths": "DOTs só aparecem sem jogadores no cômodo.",
+    "weaknesses": "Raramente se afasta do local de morte.",
+    "behaviors": [
+      {
+        "description": "DOTs só na câmera, não com jogadores no cômodo."
+      },
+      {
+        "description": "Não muda cômodo favorito."
+      },
+      {
+        "description": "Não vaga frequentemente do cômodo."
+      }
+    ],
+    "huntThreshold": 50,
+    "speed": "normal",
+    "hasLOS": true,
+    "speedDetails": {
+      "baseSpeed": 1.7,
+      "description": "Velocidade normal (1.7 m/s)",
+      "variableSpeed": false
+    }
+  },
+  {
+    "id": "myling",
+    "name": "Myling",
+    "description": "Mylings são faladores, mas silenciosos em caçadas. Sons paranormais mais frequentes.",
+    "evidences": ["EMF", "Fingerprints", "GhostWriting"],
+    "guaranteedEvidences": [],
+    "strengths": "Silencioso em caçadas.",
+    "weaknesses": "Sons paranormais frequentes.",
+    "behaviors": [
+      {
+        "description": "Passos/vocais audíveis só até 12m na caçada."
+      },
+      {
+        "description": "Sons no microfone parabólico mais frequentes."
+      }
+    ],
+    "huntThreshold": 50,
+    "speed": "normal",
+    "hasLOS": true,
+    "speedDetails": {
+      "baseSpeed": 1.7,
+      "description": "Velocidade normal (1.7 m/s)",
+      "variableSpeed": false
+    }
+  },
+  {
+    "id": "onryo",
+    "name": "Onryo",
+    "description": "Onryos são agitados por chamas extintas, aumentando a chance de caça. Chamas os enfraquecem.",
+    "evidences": ["SpiritBox", "GhostOrb", "FreezingTemps"],
+    "guaranteedEvidences": [],
+    "strengths": "Chamas extintas aumentam chance de caça.",
+    "weaknesses": "Chamas diminuem chance de caçar.",
+    "behaviors": [
+      {
+        "description": "Tenta caçar em qualquer sanidade após 3ª chama extinta."
+      },
+      {
+        "description": "Chamas como crucifixos, apaga ao tentar caçar."
+      },
+      {
+        "description": "Mais propenso a apagar chamas com mais mortos."
+      }
+    ],
+    "huntThreshold": 60,
+    "speed": "normal",
+    "hasLOS": true,
+    "speedDetails": {
+      "baseSpeed": 1.7,
+      "description": "Velocidade normal (1.7 m/s)",
+      "variableSpeed": false
+    }
+  },
+  {
+    "id": "thetwins",
+    "name": "Gêmeos",
+    "description": "Gêmeos interagem simultaneamente e alternam velocidades em caçadas.",
+    "evidences": ["EMF", "SpiritBox", "FreezingTemps"],
+    "guaranteedEvidences": [],
+    "strengths": "Interagem simultaneamente.",
+    "weaknesses": "Alternam turnos para atacar.",
+    "behaviors": [
+      {
+        "description": "2 interações simultâneas (padrão e estendido)."
+      },
+      {
+        "description": "Velocidade caça ±10% (1.53m/s - 1.87m/s)."
+      }
+    ],
+    "huntThreshold": 50,
+    "speed": "variableSpeed",
+    "hasLOS": true,
+    "speedDetails": {
+      "baseSpeed": 1.53,
+      "description": "Velocidade variável entre 1.53m/s e 1.87m/s dependendo de qual gêmeo está caçando.",
+      "variableSpeed": true
+    }
+  },
+  {
+    "id": "raiju",
+    "name": "Raiju",
+    "description": "Raijus são perturbados por eletricidade, ficando rápidos perto dela e causando distúrbios maiores.",
+    "evidences": ["EMF", "GhostOrb", "DotsProjector"],
+    "guaranteedEvidences": [],
+    "strengths": "Mais rápido perto de eletricidade.",
+    "weaknesses": "Eletricidade facilita rastreamento.",
+    "behaviors": [
+      {
+        "description": "Distúrbio eletrônico em raio de 15m (normal: 10m)."
+      },
+      {
+        "description": "Velocidade aumenta perto de eletrônicos na caçada."
+      },
+      {
+        "description": "Caça a 65% perto de eletrônicos."
+      }
+    ],
+    "huntThreshold": 50,
+    "speed": "fast",
+    "hasLOS": true,
+    "speedDetails": {
+      "baseSpeed": 1.7,
+      "losMultiplier": 1.47,
+      "description": "Velocidade normal (1.7 m/s), rápida perto de eletrônicos (2.5 m/s) ",
+      "variableSpeed": true
+    }
+  },
+  {
+    "id": "obake",
+    "name": "Obake",
+    "description": "Obakes mudam de forma e deixam impressões digitais únicas (6 dedos). Impressões desaparecem rápido.",
+    "evidences": ["EMF", "Fingerprints", "GhostOrb"],
+    "guaranteedEvidences": ["Fingerprints"],
+    "strengths": "Metamorfose.",
+    "weaknesses": "Impressões digitais únicas na metamorfose.",
+    "behaviors": [
+      {
+        "description": "Impressões digitais 6 dedos."
+      },
+      {
+        "description": "25% chance sem UV (incluindo pegadas)."
+      },
+      {
+        "description": "Muda modelo na caçada (piscar rápido)."
+      },
+      {
+        "description": "Impressões desaparecem 2x mais rápido."
+      }
+    ],
+    "huntThreshold": 50,
+    "speed": "normal",
+    "hasLOS": true,
+    "speedDetails": {
+      "baseSpeed": 1.7,
+      "description": "Velocidade normal (1.7 m/s)",
+      "variableSpeed": false
+    },
+    "media": [
+      {
+        "type": "image",
+        "url": "https://i.imgur.com/MyO9ok6.png",
+        "description": "Impressõe digital com 6 dedos"
+      }
+    ]
+  },
+  {
+    "id": "themimic",
+    "name": "Mímico",
+    "description": "Mímicos imitam outros fantasmas, mudando comportamentos e sempre mostram orbes.",
+    "evidences": ["SpiritBox", "Fingerprints", "FreezingTemps", "GhostOrb"],
+    "guaranteedEvidences": ["GhostOrb"],
+    "strengths": "Imita outros fantasmas.",
+    "weaknesses": "Sempre mostra orbes.",
+    "behaviors": [
+      {
+        "description": "Sempre com orbes (mesmo 0 evidências)."
+      },
+      {
+        "description": "Comportamento muda a cada 30s-2min."
+      }
+    ],
+    "huntThreshold": 50,
+    "speed": "normal",
+    "hasLOS": true,
+    "speedDetails": {
+      "baseSpeed": 1.7,
+      "description": "Velocidade normal (1.7 m/s), imita a velocidade do fantasma que está mímicando.",
+      "variableSpeed": true
+    }
+  },
+  {
+    "id": "moroi",
+    "name": "Moroi",
+    "description": "Morois ficam mais fortes com sanidade baixa e amaldiçoam via Spirit Box. Incensos mais eficazes.",
+    "evidences": ["SpiritBox", "GhostWriting", "FreezingTemps"],
+    "guaranteedEvidences": ["SpiritBox"],
+    "strengths": "Mais forte com sanidade baixa.",
+    "weaknesses": "Incenso cega por mais tempo.",
+    "behaviors": [
+      {
+        "description": "Amaldiçoa via Spirit Box (sanidade drena 2x)."
+      },
+      {
+        "description": "Cegueira por incenso +50% (7.5s)."
+      },
+      {
+        "description": "Mais rápido com sanidade baixa (máx 3.71 m/s)."
+      }
+    ],
+    "huntThreshold": 50,
+    "speed": "variableSpeed",
+    "hasLOS": true,
+    "speedDetails": {
+      "baseSpeed": 1.5,
+      "losMultiplier": 2.47,
+      "description": "Varia de 1.5 m/s em alta sanidade até 3.71 m/s em sanidade muito baixa e com LOS.",
+      "variableSpeed": true
+    }
+  },
+  {
+    "id": "deogen",
+    "name": "Deogen",
+    "description": "Deogens sempre sabem onde você está, muito rápidos longe, mas lentos perto. Respiração pesada no Spirit Box.",
+    "evidences": ["SpiritBox", "GhostWriting", "DotsProjector"],
+    "guaranteedEvidences": ["SpiritBox"],
+    "strengths": "Sempre sabe onde você está.",
+    "weaknesses": "Hipersensível a incenso.",
+    "behaviors": [
+      {
+        "description": "Respiração pesada no Spirit Box (1m de distância)."
+      },
+      {
+        "description": "Velocidade de caçada varia drasticamente dependendo da distância do jogador."
+      },
+      {
+        "description": "Mais visível em caçadas."
+      },
+      {
+        "description": "Sempre tem LOS na caçada."
+      }
+    ],
+    "huntThreshold": 40,
+    "speed": "verySlow",
+    "hasLOS": false,
+    "speedDetails": {
+      "baseSpeed": 0.4,
+      "description": "Varia de 3.0 m/s quando longe do jogador, caindo para 0.4 m/s quando muito próximo.",
+      "variableSpeed": true
+    }
+  },
+  {
+    "id": "thaye",
+    "name": "Thaye",
+    "description": "Thayes envelhecem, ficando mais lentos e fracos com o tempo. Resposta de idade no Ouija Board aumenta.",
+    "evidences": ["GhostOrb", "GhostWriting", "DotsProjector"],
+    "guaranteedEvidences": [],
+    "strengths": "Fica mais fraco com o tempo.",
+    "weaknesses": "Fica progressivamente mais fraco.",
+    "behaviors": [
+      {
+        "description": "Idade no Ouija Board aumenta com o tempo."
+      },
+      {
+        "description": "Envelhece a cada 1-2 minutos (se jogador no cômodo)."
+      },
+      {
+        "description": "Mais ativo quando jovem."
+      }
+    ],
+    "huntThreshold": 75,
+    "speed": "variableSpeed",
+    "hasLOS": false,
+    "speedDetails": {
+      "baseSpeed": 1,
+      "description": "Varia de 2.75 m/s quando mais jovem, reduzindo para 1.0 m/s quando totalmente envelhecido.",
+      "variableSpeed": true
+    }
+  }
+]
