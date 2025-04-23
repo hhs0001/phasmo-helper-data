@@ -519,7 +519,7 @@
     "id": "myling",
     "name": "Myling",
     "description": "Um fantasma vocal e ativo. Dizem que são silenciosos ao caçar.",
-    "evidences": ["EMF", "Fingerprints", "GhostWritingBook"],
+    "evidences": ["EMF", "Fingerprints", "GhostWriting"],
     "guaranteedEvidences": [],
     "strengths": "Passos e vocalizações muito mais silenciosos durante caçadas.",
     "weaknesses": "Produz sons paranormais no microfone parabólico com mais frequência.",
